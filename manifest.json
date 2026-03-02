@@ -2,7 +2,7 @@
   "name": "৫০টি ফ্রি এআই টুলস ব্যবহারের বিস্তারিত গাইড",
   "short_name": "এআই গাইড",
   "description": "মোঃ মঞ্জুরুল হক সংকলিত ৫০টি গুরুত্বপূর্ণ ফ্রি এআই টুলের বিস্তারিত ব্যবহার বিধি।",
-  "start_url": "./ai_tools_guide.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#f4f7f6",
   "theme_color": "#2c3e50",
