@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>৫০টি ফ্রি এআই টুলস ব্যবহারের বিস্তারিত গাইড</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --sidebar-width: 300px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            direction: ltr; /* Keeps layout standard */
+        }
+
+        /* Bengali Text Direction */
+        .bn-text {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Siyam Rupali', Arial, sans-serif; /* Recommended for Bengali */
+        }
+
+        /* Sidebar Style */
+        #sidebar {
+            width: var(--sidebar-width);
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #1a252f;
+            transition: all 0.3s;
+        }
+
+        #sidebar-header {
+            padding: 20px;
+            background-color: #1a252f;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        #tools-list {
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .tool-btn {
+            width: 100%;
+            padding: 15px 20px;
+            background: none;
+            border: none;
+            color: #ecf0f1;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.2s;
+            border-bottom: 1px solid #3e5871;
+            display: flex;
+            align-items: center;
+        }
+
+        .tool-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .tool-btn.active {
+            background-color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .tool-number {
+            margin-right: 10px;
+            opacity: 0.7;
+            font-size: 0.9em;
+        }
+
+        /* Main Content Style */
+        #main-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 40px;
+            background-color: white;
+        }
+
+        .chapter {
+            display: none; /* Hidden by default */
+            animation: fadeIn 0.5s;
+        }
+
+        .chapter.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1.chapter-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 15px;
+            margin-top: 0;
+        }
+
+        .category-badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .url-link {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #27ae60;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .url-link:hover {
+            background-color: #219150;
+        }
+
+        .section-title {
+            color: var(--secondary-color);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        ul.usage-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.usage-list li {
+            background: #eef2f5;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 5px solid var(--accent-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            #sidebar {
+                width: 100%;
+                height: 200px;
+                border-right: none;
+                border-bottom: 1px solid #1a252f;
+            }
+            #main-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <div id="sidebar-header" class="bn-text">৫০টি এআই টুলস গাইড</div>
+        <div id="tools-list">
+            </div>
+    </div>
+
+    <div id="main-content" class="bn-text">
+        
+        <div id="welcome-section" class="chapter active">
+            <h1 class="chapter-title">স্বাগতম!</h1>
+            <p>মুহাম্মদ হামেদ কর্তৃক সংকলিত গুরুত্বপূর্ণ ৫০টি ফ্রি এআই (AI) টুলের বিস্তারিত ব্যবহারের গাইডে আপনাকে স্বাগতম।</p>
+            <p>বামপাশের (বা মোবাইল ফোনে উপরের) তালিকা থেকে যেকোনো একটি টুলের নামে ক্লিক করুন। ডানপাশে ওই টুলের বিস্তারিত আলোচনা, এটি কী কাজ করে, কীভাবে ব্যবহার করবেন এবং এর প্রধান সুবিধাগুলো ভেসে উঠবে।</p>
+            <p>আপনার শেখা আনন্দদায়ক হোক!</p>
+        </div>
+
+        </div>
+
+    <script>
+        // Mapping URLs to shorter names for buttons if needed
+        const toolsData = [
+            { id: 1, name: "ChatGPT", category: "Chat & Content", url: "https://chat.openai.com", desc: "ওপেনএআই-এর তৈরি বিশ্বের সবচেয়ে জনপ্রিয় কথোপকথনমূলক এআই।", 
+              features: ["প্রবন্ধ, কোড, কবিতা, ইমেল লেখা।", "জটিল বিষয় সহজভাবে বোঝা।", "ভাষান্তর এবং সারসংক্ষেপ তৈরি।"], 
+              usage: "ওয়েবসাইটে গিয়ে গুগল বা ইমেল দিয়ে সাইন-আপ করুন। নিচের বক্সে আপনার প্রশ্ন (Prompt) লিখুন। এটি মানুষের মতো উত্তর দেবে। নির্দিষ্ট ফরম্যাটে লেখা চাইলে তা বুঝিয়ে বলুন।" },
+            
+            { id: 2, name: "Google Gemini", category: "Chat & Assistant", url: "https://gemini.google.com", desc: "গুগলের তৈরি অত্যাধুনিক এবং শক্তিশালী এআই মডেল।", 
+              features: ["গুগল সার্চের সাথে সরাসরি যুক্ত।", "ছবি বিশ্লেষণ এবং ছবি তৈরি (কিছু অঞ্চলে)।", "কোডিং এবং ডেটা বিশ্লেষণে দক্ষ।"], 
+              usage: "আপনার গুগল অ্যাকাউন্ট দিয়ে লগ-ইন করুন। এটি ব্যবহার করে আপনি লেটেস্ট তথ্য অনুসন্ধান করতে পারেন। কোনো ছবি আপলোড করে তার সম্পর্কে জানতে চাইতে পারেন।" },
+
+            { id: 3, name: "Microsoft Copilot", category: "Productivity", url: "https://copilot.microsoft.com", desc: "মাইক্রোসফটের প্রোডাক্টিভিটি অ্যাসিস্ট্যান্ট, যা উইন্ডোজ এবং বিং-এর সাথে যুক্ত।", 
+              features: ["GPT-4 এবং DALL-E 3 প্রযুক্তিতে চলে।", "ফ্রি ছবি তৈরি করা যায়।", "ওয়েব পেজ এবং ডকুমেন্টের সারসংক্ষেপ তৈরি।"], 
+              usage: "বিং ব্রাউজার বা কোপাইলট অ্যাপে গিয়ে ব্যবহার করুন। এটিতে আপনি চ্যাট করার পাশাপাশি প্রম্পট দিয়ে ছবিও তৈরি করে নিতে পারবেন। 'Creative' মোডে ছবি ভালো হয়।" },
+
+            { id: 4, name: "Claude.ai", category: "Writing & Analysis", url: "https://claude.ai", desc: "অ্যানথ্রপিক-এর তৈরি এআই, যা দীর্ঘ লেখা বিশ্লেষণ ও সুন্দর স্টাইলে লেখার জন্য পরিচিত।", 
+              features: ["একসাথে অনেক বড় ডকুমেন্ট (বই, ফাইল) পড়তে পারে।", "অত্যন্ত মানবিক এবং শুদ্ধ ভাষায় উত্তর দেয়।", "কোডিং এবং গাণিতিক সমস্যায় দক্ষ।"], 
+              usage: "ইমেল দিয়ে সাইন-আপ করুন। দীর্ঘ কোনো PDF বা টেক্সট ফাইল আপলোড করে তার সারসংক্ষেপ বা নির্দিষ্ট তথ্য জানতে চান। প্রবন্ধ লেখার সময় এর ভাষা অনেক প্রাঞ্জল হয়।" },
+
+            { id: 5, name: "Perplexity", category: "Search Engine", url: "https://perplexity.ai", desc: "উৎস বা সোর্স সহ সঠিক উত্তর প্রদানকারী স্মার্ট সার্চ ইঞ্জিন।", 
+              features: ["উত্তরের তথ্যের উৎস (Link) দেখিয়ে দেয়।", "একাধিক এআই মডেল (GPT-4, Claude) বেছে নেওয়ার সুযোগ (Pro)।", "রিয়েল-টাইম তথ্যে সমৃদ্ধ।"], 
+              usage: "গুগল সার্চের বদলে এখানে প্রশ্ন করুন। এটি বিভিন্ন ওয়েবসাইট পড়ে আপনাকে একটি গোছানো উত্তর দেবে এবং নিচে সোর্সগুলো দিয়ে দেবে, যাতে আপনি তথ্য যাচাই করতে পারেন।" },
+
+            { id: 6, name: "Poe", category: "Multi-Model AI", url: "https://poe.com", desc: "একই প্ল্যাটফর্মে অনেকগুলো জনপ্রিয় এআই বটের অ্যাক্সেস।", 
+              features: ["ChatGPT, Gemini, Claude, Llama সব একসাথে।", "নিজের কাস্টম বট তৈরি করা যায়।", "দ্রুত কথোপকথন।"], 
+              usage: "সাইন-আপ করার পর বামপাশে সব বটের তালিকা পাবেন। আপনার প্রয়োজন অনুযায়ী নির্দিষ্ট বট বেছে নিয়ে চ্যাট করুন। প্রতিদিন নির্দিষ্ট সংখ্যক মেসেজ ফ্রি।" },
+
+            { id: 7, name: "You.com", category: "Search & Chat", url: "https://you.com", desc: "প্রাইভেসি-ফোকাসড সার্চ ইঞ্জিন যা এআই চ্যাটের সাথে যুক্ত।", 
+              features: ["সার্চের পাশাপাশি ছবি ও কোড জেনারেটর।", "তথ্যের উৎস দেখায়।", "বিভিন্ন মোড (Research, Genius)।"], 
+              usage: "সাধারণ সার্চের মতো ব্যবহার করুন। এর 'Chat' মোডে গিয়ে জটিল প্রশ্নের উত্তর খুঁজুন। এটি আপনাকে ওয়েবসাইটের লিংক সহ উত্তর দেবে।" },
+
+            { id: 8, name: "Character.ai", category: "Entertainment", url: "https://character.ai", desc: "বিভিন্ন কাল্পনিক বা বাস্তব ব্যক্তিত্বের এআই সংস্করণের সাথে চ্যাট।", 
+              features: ["বিখ্যাত ব্যক্তি বা সিনেমার চরিত্রের সাথে কথা বলা।", "নতুন চরিত্র তৈরি করা।", "ভাষা শেখার বা ইন্টারভিউ প্র্যাকটিস।"], 
+              usage: "ওয়েবসাইটে গিয়ে যেকোনো চরিত্রে ক্লিক করে কথা বলা শুরু করুন। আপনি চাইলে নিজের মত চরিত্রও তৈরি করতে পারেন, তার ব্যক্তিত্ব সেট করে দিতে পারেন।" },
+
+            { id: 9, name: "Leonardo.ai", category: "Image Generation", url: "https://leonardo.ai", desc: "পেশাদার এবং অত্যন্ত উচ্চমানের শৈল্পিক ছবি তৈরির প্ল্যাটফর্ম।", 
+              features: ["ছবি তৈরির অনেকগুলো মডেল।", "Image Guidance (ছবি দিয়ে ছবি তৈরি)।", "প্রতিদিন ১৫০টি টোকেন ফ্রি (প্রায় ৭০-৮০টি ছবি)।"], 
+              usage: "সাইন-আপ করুন। 'Image Generation' এ গিয়ে আপনার কল্পনার বর্ণনা (Prompt) ইংরেজিতে লিখুন। মডেল বেছে নিন এবং জেনারেট করুন। নেগেটিভ প্রম্পট ব্যবহার করে অপ্রয়োজনীয় জিনিস বাদ দিন।" },
+
+            { id: 10, name: "Playground AI", category: "Image Generation", url: "https://playgroundai.com", desc: "সহজে এবং দ্রুত এআই ছবি তৈরি ও এডিট করার টুল।", 
+              features: ["প্রতিদিন ১০০০টি পর্যন্ত ছবি তৈরির সুযোগ।", "Canvas মোডে ছবি এডিট করা যায়।", "দ্রুত জেনারেশন গতি।"], 
+              usage: "লগ-ইন করুন। প্রম্পট লিখুন এবং ছবি তৈরি করুন। এর ফিল্টারগুলো ব্যবহার করে ছবির স্টাইল পরিবর্তন করা খুব সহজ। ছবি এডিটিংয়ের জন্য ক্যানভাস ব্যবহার করুন।" },
+
+            { id: 11, name: "Canva (AI)", category: "Graphic Design", url: "https://canva.com", desc: "গ্রাফিক ডিজাইনের জনপ্রিয় টুলে এখন যুক্ত হয়েছে শক্তিশালী এআই ফিচার।", 
+              features: ["Magic Media (টেক্সট থেকে ছবি/ভিডিও)।", "Magic Edit & Eraser (ছবি থেকে অবজেক্ট সরানো)।", "Magic Write (কন্টেন্ট লেখা)।"], 
+              usage: "ক্যানভাতে ডিজাইন খোলার পর 'Apps' বা 'Effects' সেকশনে এআই টুলগুলো পাবেন। যেমন, Magic Media ব্যবহার করে আপনি যা লিখবেন, ক্যানভা তা ছবিতে রূপান্তর করবে।" },
+
+            { id: 12, name: "Adobe Firefly", category: "Image Generation", url: "https://firefly.adobe.com", desc: "অ্যাডোবি-র তৈরি কপিরাইট-মুক্ত ও কমার্শিয়াল ব্যবহারের উপযোগী ছবি তৈরির এআই।", 
+              features: ["Text to Image.", "Generative Fill (ছবির অংশ পরিবর্তন)।", "Text Effects (স্টাইলিশ লেখা)।"], 
+              usage: "লগ-ইন করুন। ছবি তৈরি করতে প্রম্পট লিখুন। এর সবচেয়ে বড় সুবিধা হলো এটি অ্যাডোবি-র স্টল ইমেজ থেকে প্রশিক্ষিত, তাই এর ছবিগুলো কমার্শিয়াল প্রজেক্টে ব্যবহার করা নিরাপদ।" },
+
+            { id: 13, name: "Remove.bg", category: "Photo Editing", url: "https://remove.bg", desc: "মুহূর্তের মধ্যে ছবির ব্যাকগ্রাউন্ড সরানোর সবচেয়ে জনপ্রিয় টুল।", 
+              features: ["১০০% অটোমেটিক।", "নিখুঁত কাটিং।", "নতুন ব্যাকগ্রাউন্ড যোগ করার সুযোগ।"], 
+              usage: "আপনার ছবিটি আপলোড করুন। ৫ সেকেন্ডের মধ্যে ব্যাকগ্রাউন্ড সরে যাবে। এরপর 'Download' করুন। আপনি চাইলে 'Edit' এ ক্লিক করে অন্য ব্যাকগ্রাউন্ড বা কালার দিতে পারেন।" },
+
+            { id: 14, name: "Runway", category: "Video Generation", url: "https://runwayml.com", desc: "ভিডিও তৈরির ভবিষ্যৎ। টেক্সট বা ছবি থেকে ভিডিও তৈরির অগ্রগামী টুল।", 
+              features: ["Gen-2 (টেক্সট/ছবি থেকে ভিডিও)।", "Motion Brush (ছবির নির্দিষ্ট অংশ নড়ানো)।", "ভিডিওর ব্যাকগ্রাউন্ড সরানো।"], 
+              usage: "সাইন-আপ করুন। 'Gen-2' বেছে নিন। একটি সুন্দর ছবি আপলোড করুন বা বর্ণনা লিখুন। এআই ৪ সেকেন্ডের একটি ভিডিও তৈরি করবে। মোশন ব্রাশ দিয়ে নড়াচড়া নিয়ন্ত্রণ করুন।" },
+
+            { id: 15, name: "Pictory", category: "Video Creation", url: "https://pictory.ai", desc: "স্ক্রিপ্ট বা আর্টিকেল থেকে দ্রুত সোশ্যাল মিডিয়া ভিডিও তৈরির টুল।", 
+              features: ["ব্লগ পোস্টকে ভিডিওতে রূপান্তর।", "অটোমেটিক ক্যাপশন এবং ভয়েসওভার।", "বড় ভিডিও থেকে ছোট ক্লিপ (Shorts) তৈরি।"], 
+              usage: "ফ্রি ট্রায়ালে সাইন-আপ করুন। আপনার স্ক্রিপ্ট বা আর্টিকেলের লিংক পেস্ট করুন। Pictory অটোমেটিক্যালি রিলেভেন্ট স্টক ভিডিও এবং সাবটাইটেল যোগ করে একটি ভিডিও তৈরি করবে।" },
+
+            { id: 16, name: "Lumen5", category: "Video Marketing", url: "https://lumen5.com", desc: "মার্কেটিং এবং কন্টেন্ট ক্রিয়েটরদের জন্য সহজ ভিডিও তৈরির প্ল্যাটফর্ম।", 
+              features: ["ব্লগ পোস্ট টু ভিডিও।", "সহজ ড্র্যাগ-এন্ড-ড্রপ ইন্টারফেস।", "প্রচুর স্টক ভিডিও এবং মিউজিক লাইব্রেরি।"], 
+              usage: "লগ-ইন করে আপনার আর্টিকেলের টেক্সট দিন। Lumen5 প্রতিটি লাইনের জন্য স্লাইড তৈরি করবে। আপনি ছবি, মিউজিক এবং স্টাইল পরিবর্তন করে ভিডিওটি কাস্টমাইজ করতে পারেন।" },
+
+            { id: 17, name: "Synthesia", category: "Video Avatar", url: "https://synthesia.io", desc: "এআই অবতার বা ডিজিটাল মানুষ ব্যবহার করে কথা বলা ভিডিও তৈরি।", 
+              features: ["১৪০টিরও বেশি ভাষার অবতার।", "টেক্সট থেকে ভিডিও তৈরি।", "নিজস্ব অবতার তৈরির সুযোগ (Paid)।"], 
+              usage: "ফ্রি ডেমোতে গিয়ে স্ক্রিপ্ট লিখুন। Synthesia আপনার স্ক্রিপ্ট অনুযায়ী একজন ডিজিটাল মানুষ (Avatar) কে কথা বলিয়ে একটি ভিডিও তৈরি করে আপনার ইমেলে পাঠিয়ে দেবে।" },
+
+            { id: 18, name: "ElevenLabs", category: "Voice AI", url: "https://elevenlabs.io", desc: "বিশ্বের সবচেয়ে নিখুঁত এবং বাস্তবসম্মত এআই ভয়েস জেনারেটর।", 
+              features: ["মানুষের মতো ক্লোন করা কন্ঠস্বর।", "বাংলা সহ ২৯টি ভাষা সাপোর্ট।", "ভয়েস ডাবিং (ভাষান্তর)।"], 
+              usage: "সাইন-আপ করুন। 'Text to Speech' এ গিয়ে আপনার টেক্সট পেস্ট করুন। ভাষা এবং আপনার পছন্দের ভয়েস (পুরুষ/মহিলা) বেছে নিন। 'Generate' এ ক্লিক করে ভয়েসটি ডাউনলোড করুন।" },
+
+            { id: 19, name: "Copy.ai", category: "Writing & Marketing", url: "https://copy.ai", desc: "মার্কেটিং কন্টেন্ট, সোশ্যাল মিডিয়া পোস্ট এবং কপিরাইটিংয়ের জন্য সেরা টুল।", 
+              features: ["ফেসবুক/ইনস্টাগ্রাম ক্যাপশন জেনারেটর।", "ইমেল বা ব্লগ পোস্টের আইডিয়া।", "হুক এবং ক্লিকেবল হেডলাইন তৈরি।"], 
+              usage: "লগ-ইন করুন। আপনি কী ধরনের লেখা চান (যেমন: Facebook Ad) তা বেছে নিন। আপনার প্রোডাক্ট বা বিষয় সম্পর্কে একটু বর্ণনা দিন। Copy.ai আপনাকে একাধিক অপশন দেবে।" },
+
+            { id: 20, name: "Writesonic", category: "Writing", url: "https://writesonic.com", desc: "SEO-ফ্রেন্ডলি ব্লগ আর্টিকেল এবং দীর্ঘ কন্টেন্ট লেখার জন্য শক্তিশালী এআই।", 
+              features: ["AI Article Writer (এক ক্লিকে ১০০০+ শব্দের আর্টিকেল)।", "Chatsonic (লেটেস্ট তথ্য সহ চ্যাটবট)।", "Paraphrasing টুল।"], 
+              usage: "সাইন-আপ করুন। আর্টিকেলের বিষয় এবং কি-ওয়ার্ড দিন। এটি প্রথমে আউটলাইন তৈরি করবে, এরপর সম্পূর্ণ আর্টিকেল লিখে দেবে। লেখাটি আপনার মত করে এডিট করে নিন।" },
+
+            { id: 21, name: "Rytr", category: "Writing", url: "https://rytr.me", desc: "খুব সহজে এবং দ্রুত ছোট টেক্সট, ইমেল এবং আইডিয়া তৈরির জন্য কার্যকর টুল।", 
+              features: ["৩০টির বেশি ভাষা ও মোড।", "লেখার টোন (Tone) বেছে নেওয়ার সুযোগ।", "ফ্রি টিয়ারে মাসে ১০,০০০ শব্দ।"], 
+              usage: "সাইন-আপ করুন। ভাষা বাংলা বেছে নিতে পারেন। কীসের জন্য লিখছেন (যেমন: Email) তা সিলেক্ট করুন এবং কি-ওয়ার্ড দিন। এটি আপনাকে দ্রুত লেখা তৈরি করে দেবে।" },
+
+            { id: 22, name: "Notion (AI)", category: "Productivity", url: "https://notion.so", desc: "নোট তৈরি এবং অর্গানাইজ করার জনপ্রিয় টুলে এআই অ্যাসিস্ট্যান্ট।", 
+              features: ["নোটের সারসংক্ষেপ তৈরি।", "লেখার গ্রামার ঠিক করা বা বড় করা।", "আইডিয়া জেনারেট করা।"], 
+              usage: "নশন পেজে নতুন লাইন লিখে স্পেসবার বা '/' টিপে AI কমান্ড দিন। যেমন: '/summarize' লিখলে উপরের সব লেখার সারসংক্ষেপ নশন লিখে দেবে।" },
+
+            { id: 23, name: "Grammarly", category: "Writing", url: "https://grammarly.com", desc: "ইংরেজিতে লেখার গ্রামার, বানান এবং স্টাইল ঠিক করার সবচেয়ে জনপ্রিয় টুল।", 
+              features: ["রিয়েল-টাইম ভুল ধরা।", "লেখার টোন (Tone) বিশ্লেষণ।", "এআই দিয়ে লেখা পুনর্লিখন।"], 
+              usage: "ব্রাউজার এক্সটেনশন বা অ্যাপ ডাউনলোড করুন। আপনি যখনই ইংরেজিতে কিছু লিখবেন, এটি ভুলগুলো লাল দাগ দিয়ে দেখাবে এবং সঠিক রূপটি সাজেস্ট করবে।" },
+
+            { id: 24, name: "Quillbot", category: "Writing", url: "https://quillbot.com", desc: "লেখা পুনরায় লিখে সাজানোর বা প্যারাফ্রেজ করার জন্য সেরা টুল।", 
+              features: ["Paraphraser (নতুন শব্দ দিয়ে লেখা)।", "Grammar Checker.", "Summarizer (সারসংক্ষেপ)।"], 
+              usage: "আপনার ইংরেজি টেক্সটটি পেস্ট করুন। 'Paraphrase' এ ক্লিক করলে এটি নতুন শব্দ এবং বাক্য গঠন দিয়ে লেখাটি লিখে দেবে। এতে লেখার মূল অর্থ ঠিক থাকে কিন্তু প্লেজারিজম কমে।" },
+
+            { id: 25, name: "DeepL", category: "Translation", url: "https://deepl.com", desc: "গুগল ট্রান্সলেটের চেয়েও বেশি নিখুঁত এবং স্বাচ্ছন্দ্য ভাষান্তর করার টুল।", 
+              features: ["মানুষের মতো ভাষান্তর।", "ডকুমেন্ট (PDF, Docx) ফাইল অনুবাদ।", "অনেকগুলো ভাষার সাপোর্ট।"], 
+              usage: "টেক্সট পেস্ট করুন বা ফাইল আপলোড করুন। এটি অটোমেটিক্যালি ভাষা সনাক্ত করে আপনার কাঙ্ক্ষিত ভাষায় অনুবাদ করবে। এর অনুবাদ অনেক বেশি ন্যাচারাল হয়।" },
+
+            { id: 26, name: "Otter.ai", category: "Transcription", url: "https://otter.ai", desc: "অনলাইন মিটিং বা অডিও রেকর্ডকে অটোমেটিক্যালি টেক্সটে রূপান্তর।", 
+              features: ["রিয়েল-টাইম ট্রান্সক্রিপশন।", "মিটিংয়ের সারসংক্ষেপ তৈরি।", "স্পিকার সনাক্তকরণ।"], 
+              usage: "মিটিং চলাকালীন বা অডিও ফাইল আপলোড করে এটি চালু করুন। এটি সব কথা শুনে কে কী বলছে তা সহ টেক্সট লিখে দেবে। মিটিংয়ের পর মূল পয়েন্টগুলো আলাদা করে দেয়।" },
+
+            { id: 27, name: "Descript", category: "Audio/Video Editing", url: "https://descript.com", desc: "টেক্সট এডিট করার মতো করে অডিও এবং ভিডিও এডিট করার বৈপ্লবিক টুল।", 
+              features: ["কথাকে টেক্সট করা এবং টেক্সট মুছে অডিও এডিট করা।", "Overdub (ভয়েস ক্লোন করে ভুল ঠিক করা)।", "Filler words (যেমন 'um', 'uh') এক ক্লিকে সরানো।"], 
+              usage: "অডিও/ভিডিও ফাইল আপলোড করুন। Descript এটি ট্রান্সক্রাইব করবে। আপনি টেক্সট থেকে কোনো শব্দ ডিলিট করলে ভিডিওর ওই অংশ অটোমেটিক্যালি কেটে যাবে।" },
+
+            { id: 28, name: "Murf.ai", category: "Voice AI", url: "https://murf.ai", desc: "পেশাদার স্টুডিও কোয়ালিটির এআই ভয়েসওভার তৈরির টুল।", 
+              features: ["প্রচুর প্রিমিয়াম ভয়েস (US, UK ইত্যাদি)।", "ভয়েসের গতি, পিচ নিয়ন্ত্রণ।", "বাংলা ভয়েসওভার সাপোর্ট।"], 
+              usage: "লগ-ইন করুন। আপনার স্ক্রিপ্ট পেস্ট করুন। একজন ভালো স্পিকার বেছে নিন। 'Play' করে দেখুন এবং এরপর ভয়েসওভারটি ডাউনলোড করুন। এটি ElevenLabs এর মতই শক্তিশালী।" },
+
+            { id: 29, name: "CapCut (AI)", category: "Video Editing", url: "https://capcut.com", desc: "জনপ্রিয় এই ভিডিও এডিটরে যুক্ত হয়েছে শক্তিশালী এআই ফিচার।", 
+              features: ["Auto Caption (বাংলা সহ)।", "Background Removal.", "AI স্টিকার এবং এফেক্ট।"], 
+              usage: "CapCut অ্যাপ বা ওয়েব সংস্করণে ভিডিও আপলোড করুন। 'Text' এ গিয়ে 'Auto captions' এ ক্লিক করলে এটি ভিডিওর সব কথা শুনে বাংলা বা ইংরেজিতে সাবটাইটেল তৈরি করে দেবে।" },
+
+            { id: 30, name: "Clipdrop", category: "Photo Editing", url: "https://clipdrop.co", desc: "অ্যাডোবি-র Generative Fill এর মতো ফিচার সহ ছবি এডিটিংয়ের এআই প্ল্যাটফর্ম।", 
+              features: ["Uncrop (ছবির বাইরে অংশ তৈরি)।", "Reimagine (ছবির নতুন ভার্সন)।", "Cleanup (অবজেক্ট সরানো)।"], 
+              usage: "ছবি আপলোড করুন। এরপর যেকোনো টুল বেছে নিন। যেমন, Uncrop ব্যবহার করে আপনি একটি ছোট ছবিকে বড় করে তার চারপাশের অংশ এআই দিয়ে তৈরি করে নিতে পারেন।" },
+
+            { id: 31, name: "NightCafe", category: "Image Generation", url: "https://nightcafe.studio", desc: "কমিউনিটি-বেসড এআই ছবি তৈরি এবং আর্ট শেয়ার করার প্ল্যাটফর্ম।", 
+              features: ["DALL-E 2, Stable Diffusion মডেল।", "ডেইলি চ্যালেঞ্জ এবং পুরস্কার।", "সহজ ইন্টারফেস।"], 
+              usage: "সাইন-আপ করুন। প্রম্পট দিন এবং ছবি তৈরি করুন। প্রতিদিন ফ্রিতে কিছু ক্রেডিট পাবেন। এটিতে অন্যদের তৈরি ছবি দেখেও আইডিয়া নেওয়া যায়।" },
+
+            { id: 32, name: "BlueWillow", category: "Image Generation", url: "https://bluewillow.ai", desc: "Midjourney এর মতো ডিসকর্ড-বেসড ফ্রি ছবি তৈরির এআই।", 
+              features: ["ফ্রি ছবি তৈরি।", "ডিসকর্ড কমিউনিটি।", "দ্রুত ছবি জেনারেশন।"], 
+              usage: "এদের ডিসকর্ড সার্ভারে জয়েন করুন। যেকোনো 'rookie' চ্যানেলে গিয়ে '/imagine' লিখে আপনার প্রম্পট দিন। এটি আপনাকে ৪টি ছবি দেবে, যা আপনি আপস্কেল করতে পারেন।" },
+
+            { id: 33, name: "Craiyon", category: "Image Generation", url: "https://craiyon.com", desc: "অত্যন্ত সহজ এবং সম্পূর্ণ ফ্রি টেক্সট-টু-ইমেজ জেনারেটর।", 
+              features: ["কোনো অ্যাকাউন্ট লাগে না।", "আনলিমিটেড ছবি তৈরি।", "সহজ ব্যবহার।"], 
+              usage: "ওয়েবসাইটে যান। ইংরেজিতে প্রম্পট লিখুন। কয়েক মিনিটের মধ্যে এটি আপনাকে ৯টি ছবি তৈরি করে দেবে। ছবিগুলো ডাউনলোড করুন।" },
+
+            { id: 34, name: "TensorFlow Playground", category: "Education", url: "https://playground.tensorflow.org", desc: "নিউরাল নেটওয়ার্ক কীভাবে কাজ করে তা বোঝার জন্য একটি ভিজ্যুয়াল টুল।", 
+              features: ["ইন্টাররেক্টিভ নিউরাল নেটওয়ার্ক।", "ডেটা সেট বেছে নেওয়ার সুযোগ।", "শেখার জন্য সেরা।"], 
+              usage: "ওয়েবসাইটে গিয়ে আপনি নিউরাল নেটওয়ার্কের লেয়ার, নিউরন সংখ্যা পরিবর্তন করে দেখতে পারেন কীভাবে এটি ডেটা ক্লাসিফাই করে। প্রোগ্রামার এবং এআই শিক্ষার্থীদের জন্য সেরা।" },
+
+            { id: 35, name: "Teachable Machine", category: "Education", url: "https://teachablemachine.withgoogle.com", desc: "কোনো কোডিং ছাড়াই নিজের এআই মডেলকে প্রশিক্ষণ দিন।", 
+              features: ["ছবি, শব্দ, পোজ সনাক্তকরণ।", "সহজ ট্রেনিং প্রক্রিয়া।", "মডেল এক্সপোর্ট করার সুযোগ।"], 
+              usage: "ওয়েবক্যামের সামনে আপনার হাত বা কোনো বস্তু ধরুন, এআই কে তা শিখান। এরপর আপনার হাত দেখালে এআই বলবে এটি কী। এভাবে আপনি নিজের তৈরি এআই মডেল বানাতে পারেন।" },
+
+            { id: 36, name: "Hugging Face", category: "Development", url: "https://huggingface.co", desc: "এআই এবং মেশিন লার্নিং মডেলের বিশাল লাইব্রেরি বা হাব।", 
+              features: ["হাজার হাজার ওপেন সোর্স মডেল।", "মডেল টেস্ট করার স্পেস (Spaces)।", "ডেটা সেট।"], 
+              usage: "ডেভেলপারদের জন্য এটি জান্নাত। সাধারণ ব্যবহারকারীরা এদের 'Spaces' এ গিয়ে অন্যের তৈরি করা এআই মডেল (যেমন: বাংলা চ্যাটবট বা ছবি তৈরির টুল) ফ্রিতে টেস্ট করতে পারেন।" },
+
+            { id: 37, name: "Replit (AI)", category: "Development", url: "https://replit.com", desc: "অনলাইন কোড এডিটর যা এআই অ্যাসিস্ট্যান্ট সহ যুক্ত।", 
+              features: ["কোড অটো-কমপ্লিশন।", "ভুল ধরা এবং ঠিক করা।", "কোড বুঝিয়ে দেওয়া।"], 
+              usage: "সাইন-আপ করুন। কোড লেখা শুরু করলে Replit AI আপনাকে পরবর্তী লাইন সাজেস্ট করবে। আপনি স্পেস টিপে বা 'Chat' এ গিয়ে এআই এর সাহায্য নিতে পারেন।" },
+
+            { id: 38, name: "Codeium", category: "Development", url: "https://codeium.com", desc: "ফ্রি এবং অত্যন্ত দ্রুত কোড অটো-কমপ্লিশন ও চ্যাট টুল।", 
+              features: ["VS Code, JetBrains সহ প্রচুর IDE সাপোর্ট।", "দ্রুত কোড জেনারেশন।", "ফ্রি টিয়ারে অনেক সুবিধা।"], 
+              usage: "আপনার কোড এডিটরের জন্য এক্সটেনশনটি ডাউনলোড করুন। কোড লেখা শুরু করলে এটি দ্রুত এবং নির্ভুলভাবে পরবর্তী কোড সাজেস্ট করবে।" },
+
+            { id: 39, name: "Phind", category: "Search & Coding", url: "https://phind.com", desc: "ডেভেলপারদের জন্য বিশেষায়িত সার্চ ইঞ্জিন ও চ্যাটবট।", 
+              features: ["কোড সোর্স সহ উত্তর দেয়।", "জটিল প্রোগ্রামিং প্রশ্নের সমাধান।", "অনেকগুলো এআই মডেল।"], 
+              usage: "আপনার প্রোগ্রামিং সম্পর্কিত যেকোনো প্রশ্ন বা এরর পেস্ট করুন। এটি ইন্টারনেট সার্চ করে এবং এআই ব্যবহার করে আপনাকে কোড সহ একটি সম্পূর্ণ উত্তর দেবে।" },
+
+            { id: 40, name: "Durable.co", category: "Web Design", url: "https://durable.co", desc: "মাত্র ৩০ সেকেন্ডে এআই ব্যবহার করে সম্পূর্ণ ওয়েবসাইট তৈরি।", 
+              features: ["সেকেন্ডের মধ্যে ডিজাইন।", "হোস্টিং এবং কাস্টমাইজেশন।", "ইমেজ এবং টেক্সট অটোমেটিক্যালি যোগ করা।"], 
+              usage: "সাইন-আপ করে আপনার ব্যবসার নাম এবং ধরন দিন। 'Generate' এ ক্লিক করুন। Durable আপনাকে ইমেজ, টেক্সট এবং কন্টাক্ট ফর্ম সহ একটি সুন্দর ওয়েবসাইট তৈরি করে দেবে, যা আপনি এডিট করতে পারেন।" },
+
+            { id: 41, name: "Tome", category: "Presentations", url: "https://tome.app", desc: "এআই ব্যবহার করে সুন্দর এবং আধুনিক প্রেজেন্টেশন তৈরি।", 
+              features: ["টেক্সট থেকে স্লাইড তৈরি।", "ডিজিটাল আর্ট জেনারেটর (DALL-E)।", "ইন্টাররেক্টিভ এলিমেন্ট।"], 
+              usage: "সাইন-আপ করুন। আপনার প্রেজেন্টেশনের বিষয় লিখুন। Tome প্রতিটি স্লাইডের জন্য কন্টেন্ট এবং ছবি তৈরি করে একটি সম্পূর্ণ ডেক তৈরি করে দেবে। আপনি ছবি বা লেখা পরিবর্তন করতে পারেন।" },
+
+            { id: 42, name: "Gamma.app", category: "Presentations", url: "https://gamma.app", desc: "এক ক্লিকে প্রেজেন্টেশন, ডকুমেন্ট বা ওয়েব পেজ তৈরির শক্তিশালী টুল।", 
+              features: ["আধুনিক ডিজাইন।", "টেক্সট থেকে সম্পূর্ণ প্রেজেন্টেশন।", "বাংলা ভাষা সাপোর্ট।"], 
+              usage: "লগ-ইন করুন। আপনার বিষয় বা আউটলাইন দিন। Gamma আপনাকে কয়েক সেকেন্ডের মধ্যে একটি কাস্টম থিম সহ পেশাদার মানের প্রেজেন্টেশন তৈরি করে দেবে।" },
+
+            { id: 43, name: "SlidesAI.io", category: "Presentations", url: "https://slidesai.io", desc: "গুগল স্লাইডস (Google Slides) এর জন্য এআই প্লাগইন।", 
+              features: ["বড় টেক্সট থেকে স্লাইড তৈরি।", "গুগল স্লাইডস এর সাথে সরাসরি যুক্ত।", "সহজ ব্যবহার।"], 
+              usage: "গুগল স্লাইডস এ গিয়ে এই এক্সটেনশনটি ইনস্টল করুন। এরপর আপনার টেক্সট পেস্ট করলে এটি অটোমেটিক্যালি স্লাইড তৈরি করে দেবে।" },
+
+            { id: 44, name: "Soundraw", category: "Music Generation", url: "https://soundraw.io", desc: "আপনার ভিডিও বা প্রজেক্টের জন্য কপিরাইট-মুক্ত মিউজিক তৈরি।", 
+              features: ["মুড, গতি, দৈর্ঘ্য নিয়ন্ত্রণ।", "আনলিমিটেড মিউজিক তৈরি।", "সহজ কাস্টমাইজেশন।"], 
+              usage: "সাইন-আপ করুন। কী ধরনের মিউজিক চান (যেমন: Happy, Cinematic) তা বেছে নিন। Soundraw আপনাকে অনেকগুলো ট্রাক তৈরি করে দেবে। সেগুলো আপনি ডাউনলোড করতে পারেন।" },
+
+            { id: 45, name: "AIVA", category: "Music Generation", url: "https://aiva.ai", desc: "কৃত্রিম বুদ্ধিমত্তা দিয়ে পেশাদার মানের মিউজিক কম্পোজ করা।", 
+              features: ["অনেকগুলো মিউজিক স্টাইল।", "MIDI ফাইল ডাউনলোড।", "পেশাদার ব্যবহার।"], 
+              usage: "লগ-ইন করুন। একটি প্রোফাইল বেছে নিন এবং মিউজিক জেনারেট করুন। এর মাধ্যমে আপনি নতুন সুর বা ব্যাকগ্রাউন্ড মিউজিক তৈরি করতে পারেন।" },
+
+            { id: 46, name: "Kaiber.ai", category: "Video Generation", url: "https://kaiber.ai", desc: "শৈল্পিক এবং ক্রিয়েটিভ ছোট ভিডিও জেনারেটর।", 
+              features: ["ছবি থেকে ভিডিও।", "মিউজিক রিঅ্যাক্টিভ ভিডিও।", "ফ্রি ক্রেডিট।"], 
+              usage: "সাইন-আপ করে একটি ছবি আপলোড করুন। আপনার ভিডিওর স্টাইল বর্ণনা করুন। Kaiber ওই ছবিকে একটি সুন্দর আর্টিস্টিক ভিডিওতে রূপান্তর করবে। ক্রেডিট প্রতিদিন ফ্রি।" },
+
+            { id: 47, name: "Pixlr (AI)", category: "Photo Editing", url: "https://pixlr.com", desc: "অনলাইন ফটো এডিটরে এআই ফিচার।", 
+              features: ["AI Background Remover.", "AI Generative Fill.", "AI Image জেনারেটর।"], 
+              usage: "লগ-ইন করুন। ফটো এডিটর মোডে গিয়ে 'Generative Fill' ব্যবহার করে ছবির কোনো অংশ এআই দিয়ে পরিবর্তন বা নতুন অংশ যোগ করতে পারেন।" },
+
+            { id: 48, name: "Cleanup.pictures", category: "Photo Editing", url: "https://cleanup.pictures", desc: "ছবির ভেতর থেকে অপ্রয়োজনীয় অবজেক্ট সরানোর জন্য সেরা টুল।", 
+              features: ["সহজ ব্যবহার।", "নিখুঁত অবজেক্ট রিমুভাল।", "ফ্রি ভার্সন।"], 
+              usage: "ছবি আপলোড করুন। ব্রাশ টুল দিয়ে যে অবজেক্ট বা মানুষকে সরাতে চান তা মার্ক করুন। কয়েক সেকেন্ডের মধ্যে ওটি সরে যাবে এবং ওই অংশ এআই দিয়ে পূরণ হয়ে যাবে।" },
+
+            { id: 49, name: "Looka", category: "Logo Design", url: "https://looka.com", desc: "কৃত্রিম বুদ্ধিমত্তা ব্যবহার করে কয়েক মিনিটে পেশাদার লোগো ডিজাইন।", 
+              features: ["ব্র্যান্ড কিট তৈরি।", "অনেকগুলো লোগো আইডিয়া।", "সহজ কাস্টমাইজেশন।"], 
+              usage: "আপনার কোম্পানির নাম এবং ধরন দিন। Looka আপনাকে প্রচুর লোগো ডিজাইন দেখাবে। আপনার পছন্দের ডিজাইনটি বেছে নিয়ে কালার বা ফন্ট পরিবর্তন করুন।" },
+
+            { id: 50, name: "Bing Image Creator", category: "Image Generation", url: "https://bing.com/images/create", desc: "মাইক্রোসফট এবং ওপেনএআই-এর DALL-E 3 প্রযুক্তিতে ফ্রি ছবি তৈরি।", 
+              features: ["উচ্চমানের এবং বিস্তারিত ছবি।", "সম্পূর্ণ ফ্রি।", "সহজ ব্যবহার।"], 
+              usage: "আপনার মাইক্রোসফট অ্যাকাউন্ট দিয়ে লগ-ইন করুন। প্রম্পট লিখুন এবং ছবি তৈরি করুন। এটি বর্তমান সময়ের অন্যতম সেরা ফ্রি ছবি তৈরির টুল।" }
+        ];
+
+        // Function to create sidebar buttons
+        function generateSidebar() {
+            const listContainer = document.getElementById('tools-list');
+            
+            toolsData.forEach(tool => {
+                const button = document.createElement('button');
+                button.className = 'tool-btn';
+                button.onclick = () => showChapter(`chapter${tool.id}`);
+                button.id = `btn-chapter${tool.id}`;
+
+                button.innerHTML = `
+                    <span class="tool-number">${tool.id}.</span>
+                    <span class="bn-text">${tool.name}</span>
+                `;
+                listContainer.appendChild(button);
+            });
+        }
+
+        // Function to create chapter content
+        function generateChapters() {
+            const contentArea = document.getElementById('main-content');
+            
+            toolsData.forEach(tool => {
+                const chapterDiv = document.createElement('div');
+                chapterDiv.id = `chapter${tool.id}`;
+                chapterDiv.className = 'bn-text chapter';
+
+                chapterDiv.innerHTML = `
+                    <h1 class="chapter-title">${tool.name}<span class="category-badge">${tool.category}</span></h1>
+                    
+                    <a href="${tool.url}" target="_blank" class="url-link">টুলস লিংকে যান</a>
+                    
+                    <p><strong>বিবরণ:</strong> ${tool.desc}</p>
+                    
+                    <div class="section-title">প্রধান ফিচারসমূহ</div>
+                    <ul class="usage-list">
+                        ${tool.features.map(f => `<li>${f}</li>`).join('')}
+                    </ul>
+                    
+                    <div class="section-title">কীভাবে ব্যবহার করবেন?</div>
+                    <ul class="usage-list">
+                        <li>${tool.usage}</li>
+                    </ul>
+                `;
+                contentArea.appendChild(chapterDiv);
+            });
+        }
+
+        // Function to show specific chapter
+        function showChapter(chapterId) {
+            // Hide all chapters
+            const chapters = document.querySelectorAll('.chapter');
+            chapters.forEach(ch => ch.classList.remove('active'));
+            
+            // Hide welcome section
+            document.getElementById('welcome-section').classList.remove('active');
+
+            // Deactivate all buttons
+            const buttons = document.querySelectorAll('.tool-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show selected chapter
+            const targetChapter = document.getElementById(chapterId);
+            if(targetChapter) {
+                targetChapter.classList.add('active');
+                // Auto-scroll main content area to top
+                document.getElementById('main-content').scrollTop = 0;
+            }
+
+            // Activate current button
+            const currentButton = document.getElementById(`btn-${chapterId}`);
+            if(currentButton) {
+                currentButton.classList.add('active');
+            }
+        }
+
+        // Initialize the page
+        generateSidebar();
+        generateChapters();
+
+    </script>
+</body>
+</html>
