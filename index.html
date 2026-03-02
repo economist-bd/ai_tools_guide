@@ -178,6 +178,23 @@
             }
         }
     </style>
+        <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c3e50">
+    
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
+
 </head>
 <body>
 
